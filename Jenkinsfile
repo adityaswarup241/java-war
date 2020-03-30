@@ -1,5 +1,9 @@
 pipeline {
     agent any
+	Tools{
+		jdk 'jdk1.8.0_241'
+		maven 'apache-maven-3.6.3'
+	}
     stages {
         stage ('Clone') {
             steps {
