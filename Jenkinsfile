@@ -21,7 +21,7 @@ pipeline {
 	}
 	stage ('Deploy'){
 	    steps {
-		bat 'copy C:/Users/zaya/.jenkins/workspace/git-job/target/*.war C:/Users/zaya/apache-tomcat-8.5.53/webapps/'
+		bat 'copy C:/Users/zaya/.jenkins/workspace/ci-cd-pipeline/target/hello-world-war-1.0.0.war C:/Users/zaya/apache-tomcat-8.5.53/webapps/'
 		bat 'cd C:/Users/zaya/apache-tomcat-8.5.53/bin'
 		bat 'start startup.bat'
 		}
