@@ -13,7 +13,7 @@ pipeline {
 	stage ('Build') {
 	    steps {
 		rtMavenRun(
-		  mvn clean install
+		  bat 'mvn clean install'
 		  )
 		}
 	}
