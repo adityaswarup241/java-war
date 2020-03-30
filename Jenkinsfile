@@ -17,8 +17,8 @@ pipeline {
 	stage ('Build') {
 	    steps {
 		rtMavenRun(
-			bat 'cd C:/Users/zaya/apache-maven-3.6.3/bin/mvn.bat'
-		        bat 'mvn clean install'
+			cd C:/Users/zaya/apache-maven-3.6.3/bin/mvn.bat'
+		        mvn clean install
 		  )
 		}
 	}
