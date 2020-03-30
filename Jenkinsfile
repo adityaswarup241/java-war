@@ -17,7 +17,6 @@ pipeline {
 	stage ('Build') {
 	    steps {
 		rtMavenRun(
-			bat 'cd C:/Users/zaya/apache-maven-3.6.3/bin/mvn.bat'
 		        bat 'mvn -Dmaven.test.failure.ignore=true clean install'
 		  )
 		}
