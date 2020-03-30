@@ -9,9 +9,7 @@ pipeline {
 	stage ('Build') {
 	    steps {
 		rtMavenRun(
-		  tool: MAVEN_HOME,
-		  pom: 'java-jar/pom.xml'
-		  goals: 'clean install'
+		  mvn clean install
 		  )
 		}
 	}
