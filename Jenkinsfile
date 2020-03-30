@@ -16,7 +16,6 @@ pipeline {
     	}
 	stage ('Build') {
 	    steps {
-		rtMavenRun(
 		        bat 'mvn -Dmaven.test.failure.ignore=true clean install'
 		  )
 		}
