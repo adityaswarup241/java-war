@@ -4,6 +4,10 @@ pipeline {
 		jdk 'JAVA_HOME'
 		maven 'MAVEN_HOME'
 	}
+	environment{
+		JAVA_HOME = "C:\Program Files\Java\jdk1.8.0_241"
+		MAVEN_HOME = "C:\Users\zaya\apache-maven-3.6.3"
+	}
     stages {
         stage ('Clone') {
             steps {
