@@ -7,3 +7,4 @@ now using batch commands.
 for pipeline view.
 Now applying Pipeline using Groovy script
 Second Attempt
+Trying Next day.
