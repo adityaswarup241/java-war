@@ -22,7 +22,8 @@ pipeline {
 	stage ('Deploy'){
 	    steps {
 		bat 'xcopy /y "C:/Users/zaya/.jenkins/workspace/ci-cd-pipeline/target/hello-world-1.0.war" "C:/Users/zaya/apache-tomcat-8.5.53/webapps"'
-		bat '"C:/Users/zaya/apache-tomcat-8.5.53/bin/startup.bat"'
+		bat '"C:/Users/zaya/apache-tomcat-8.5.53/bin"'
+		bat 'startup.bat'
 		}
 	}
 	}
