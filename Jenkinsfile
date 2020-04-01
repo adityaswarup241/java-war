@@ -21,7 +21,7 @@ pipeline {
 	}
 	stage ('Deploy'){
 	    steps {
-		bat 'copy "C:/Users/zaya/.jenkins/workspace/ci-cd-pipeline/target/*.war" "C:/Users/zaya/apache-tomcat-8.5.53/webapps"'
+		bat 'copy "C:/Users/zaya/Desktop/*.war" "C:/Users/zaya/apache-tomcat-8.5.53/webapps"'
 		bat '"C:/Users/zaya/apache-tomcat-8.5.53/bin/startup.bat"'
 		}
 	}
